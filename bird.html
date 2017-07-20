@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bird.css"/>
+		<link rel="stylesheet" href="css/animate.css" />
+		<script src="js/jquery-1.8.3.min.js"></script>	
+		
+	</head>
+	<body>
+		<div id="header"></div>
+		<div class="content_bird">
+			<div class="bird_new" >
+				<h1>小鸟动态</h1>
+				<h2>About Company</h2>
+				<img src="img/three_points01.png" />
+			</div>
+			<div class="newlist">
+				列表
+				<span class="pen">					
+				</span>
+			</div>
+		    <div class="photo" id="articleList">
+			<div class="same" articleid="$articleId$">
+				<div class="images">
+					<img src="img/list_img01.jpg"/>	
+					</div>
+				<div class="words">
+					<div class="title">
+						八戒教育重装出发
+					</div>
+					<div class="date">
+						2016-02-03
+					</div>
+					<p>小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在线培训平台</p>
+				</div>
+				</div>
+			<div class="same">
+				<div class="images">
+					<img src="img/list_img02.jpg"/>	
+					</div>
+				<div class="words">
+					<div class="title">
+						小鸟掌学开通国外渠道
+					</div>
+					<div class="date">
+						2016-02-03
+					</div>
+					<p>小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在线培训平台</p>
+				</div>
+				</div>
+		    <div class="same">
+				<div class="images">
+					<img src="img/list_img03.jpg"/>	
+					</div>
+				<div class="words">
+					<div class="title">
+						八戒教育天气app上线
+					</div>
+					<div class="date">
+						2016-02-03
+					</div>
+					<p>小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在线培训平台</p>
+				</div>
+				</div>
+		    <div class="same">
+				<div class="images">
+					<img src="img/list_img04.jpg"/>	
+					</div>
+				<div class="words">
+					<div class="title">
+						八戒教育重装出发
+					</div>
+					<div class="date">
+						2016-02-03
+					</div>
+					<p>小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在线培训平台</p>
+				</div>
+				</div>
+		    <div class="same">
+				<div class="images">
+					<img src="img/list_img03.jpg"/>	
+					</div>
+				<div class="words">
+					<div class="title">
+						国外报道
+					</div>
+					<div class="date">
+						2016-02-03
+					</div>
+					<p>小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在线培训平台</p>
+				</div>
+				</div>
+		    <div class="same">
+				<div class="images">
+					<img src="img/list_img01.jpg"/>	
+					</div>
+				<div class="words">
+					<div class="title">
+						八戒教育重装出发
+					</div>
+					<div class="date">
+						2016-02-03
+					</div>
+					<p>小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在线培训平台</p>
+				</div>
+				</div>
+		    <div class="check">
+		    	<img src="img/list_gomore_bg.jpg" />
+		    	<i class="fade"></i>
+		    </div>
+		    </div>
+		</div>
+		
+		
+		<div id="footer"></div>
+		<div class="hidde">
+			<a href="#top"><i id="hidde1"></i></a>
+			<i id="hidde2"></i>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	$("#header").load("head.html")
+	$("#footer").load("footer.html")
+	$(function() {
+		$(window).scroll(function() {
+			if($(this).scrollTop() > 600) {
+				$(".hidde").fadeIn();
+			} else {
+				$(".hidde").fadeOut();
+			}
+		})
+	})
+	
+</script>

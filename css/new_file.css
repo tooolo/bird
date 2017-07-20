@@ -1,0 +1,539 @@
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow-x: hidden;
+}
+img{
+	margin: 0;
+	padding: 0;
+}
+.intro{
+	margin: 0 auto;
+	width: 100%;
+	height: 923px;
+	background: url(../img/mokuai02_bg.jpg) no-repeat;
+	background-size:cover ;
+}
+.intro .in_bg{
+	width: 1200px;
+	height: 500px;
+	margin: 0 auto;	
+}
+.intro .in_bg img{
+	margin-top: 83px;
+	margin-left: 68px;
+}
+.business{
+	background: #F1F2F6;
+}
+.scrol{
+	width: 622px;
+	height: 300px;
+	margin: 0 auto;
+	background: url(../img/bus.jpg);
+}
+.business .change{
+	width: 1200px;
+	margin: 0 auto;
+	border-bottom: 2px dashed #e0e0e2;
+}
+.showe1{
+	width: 100%;
+	height: 250px;		
+}
+.num1{
+	width: 200px;	
+	float: left;
+	text-align: center;
+	line-height: 200px;
+}
+.num1 h1{	
+	font-size: 80px;
+	color: #B5B6BA;
+}
+.head1{
+	width: 274px;
+	height: 130px;
+	float: left;
+	text-align: right;
+	padding-top: 70px;
+}
+.head1 h1{
+	color: #311859;
+	font-size: 24px;
+}
+.head1 span{
+	color: #565559;
+	font-size: 14px;
+}
+.image1{
+	width: 235px;
+	height: 200px;
+	float: left;	
+
+}
+.image1 img{	
+	position: relative;
+	top: 36px;
+	left: 57px;
+}
+.text1{
+	width: 405px;
+	height: 200px;
+	float: left;	
+
+}
+.text1 p{
+	color: #565559;
+	padding-top: 40px;
+	font-size: 14px;
+}
+.imgag_1{
+	width: 68px;
+	height: 100px;
+	float: left;
+	position: relative;
+	left: 20px;
+	top: 20px;	
+}
+
+.hide1{
+	width: 847px;
+	height: 190px;
+	margin: 0 auto;
+	color: #565559;	
+}
+.open{
+	background: url(../img/cuo.jpg) no-repeat;
+}
+.close{
+	background: url(../img/jia.png) no-repeat; 
+}
+.imgag_2{
+	width: 68px;
+	height: 100px;
+	float: left;
+	position: relative;
+	left: 20px;
+	top: 20px;
+	
+}
+.hide2{
+	width: 847px;
+	height: 190px;
+	margin: 0 auto;
+	color: #565559;
+	display: none;
+}
+.imgag_3{
+	width: 68px;
+	height: 100px;
+	float: left;
+	position: relative;
+	left: 20px;
+	top: 20px;
+	
+}
+.hide3{
+	width: 847px;
+	height: 190px;
+	margin: 0 auto;
+	color: #565559;
+	display: none;
+}
+.cent{
+	width: 1200px;
+	height: 800px;
+	
+	margin: 0 auto;
+}
+.cent_img{
+	width: 354px;
+	height:254px;
+	margin: 0 auto;
+}
+.cent_play{
+	width: 1119px;
+	height: 295px;
+	margin: 0 auto;
+	overflow: hidden;	
+}
+.cent_play #changeimg{
+	/*height: 295px;	
+	width: 3357px;*/
+	list-style: none;
+}
+.cent_play #changeimg li{
+	width: 1119px;
+	height: 295px;
+	float: left;
+}
+
+.circle_point{
+	width: 300px;
+	height: 100px;
+	margin: 0 auto;
+}
+.circle_point img{
+	vertical-align: middle;
+}
+#rigthimg{
+	float: right;
+}
+.circle_point i{
+	width: 10px;
+	height:10px;
+	display: inline-block;	
+	margin-left: 42px;
+	background: #ccc;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.circle_point .active{
+	background: #006FD6;
+}
+.coperation{
+	height: 760px;
+	margin: 0 auto;
+}
+.coper{
+	width: 419px;
+	height: 225px;
+	margin: 0 auto;
+}
+#imgt{
+	position: relative;
+	left: -340px;
+}
+#imgb{
+	position: relative;
+    left: 50px;
+	top: 100px;
+}
+#partner{
+	width: 414px;
+	height: 193px;
+}
+.coper_b{
+	width: 1260px;
+	height: 400px;	
+	margin: 0 auto;
+}
+h1{
+	color: #5F4C82;
+	font-size: 35px;
+}
+.coper_left{
+	width: 619px;
+	height: 399px;
+	border-right:1px solid #ccc ;
+	float: left;
+}
+.coper_right{
+	width: 601px;
+	height: 400px;
+	float: right;
+}
+.coper_right button{
+	width: 70px;
+	height: 30px;
+	float: right;
+	border: 2px solid #ccc;
+	background: white;
+	border-radius: 30%;
+	margin-top: -60px;
+	color: #5F4C82;
+}
+.coper_left ul{
+	width: 500px;
+	height: 400px;
+	margin-top: 70px;
+}
+.coper_right ul{
+	width: 550px;
+	height: 400px;
+	margin-top: 70px;
+}
+.coper_b ul>li:first-child{
+	margin-top: -24px;
+}
+.coper_right h1{
+	margin-left: 50px;
+}
+.coper_left ul li{
+	width: 160px;
+	height: 140px;
+    display: inline-block;	
+}
+.coper_right ul li{
+	margin-left: 50px;
+	width: 127px;
+	height: 140px;
+    display: inline-block;	
+}
+.coper_b ul li:hover{
+	opacity: 0.8;
+}
+.callus{
+	margin: 0 auto;
+	background: #F1F2F6;
+}
+.callimg{
+	width: 428px;
+	height: 200px;
+	margin: 0 auto;
+}
+.oinput{
+	width: 1100px;
+	height: 46px;
+	margin: 0 auto;
+}
+.oinput #oinput1 i{
+	width: 45px;
+	height: 45px;
+	float: left;
+	background:#E7E8EC url(../img/lianxi_icons.png) 13px 14px no-repeat;
+}
+.oinput input{
+	outline: none;
+	width: 275px;
+	height: 45px;
+	float: right;
+	border: none;
+}
+#oinput1{
+	width: 333px;
+	height: 45px;
+	float: left;
+	background: white;
+	border: 1px solid #ccc;
+}
+
+.oinput #oinput2 i{
+	width: 45px;
+	height: 45px;
+	float: left;
+	background: #E7E8EC url(../img/lianxi_icons.png) 13px 14px no-repeat;
+}
+#oinput2{
+	width: 333px;
+	height: 45px;
+	float: left;
+	background: white;
+	margin-left: 39px;
+	border: 1px solid #ccc;
+}
+
+.oinput #oinput3 i{
+	width: 45px;
+	height: 45px;
+	float: left;
+	background: #E7E8EC url(../img/lianxi_icons.png) 13px 14px no-repeat;
+}
+#oinput3{
+	width: 333px;
+	height: 45px;
+	float: right;
+	background: white;
+	border: 1px solid #ccc;
+}
+#oinput1:hover{
+	border: 1px solid #B5B5B5;
+}
+#oinput2:hover{
+	border: 1px solid #B5B5B5;
+}
+#oinput3:hover{
+	border: 1px solid #B5B5B5;
+}
+.talksome .talkl:hover{
+	border: 1px solid #B5B5B5;
+}
+.talksome{
+	width: 1100px;
+	height: 220px;
+	margin: 40px auto;
+}
+.talksome .talkl{
+	width: 705px;
+	height: 210px;
+	background: white;
+	border: 1px solid #ccc;
+	float: left;
+}
+.talksome i{
+	width: 45px;
+	height: 210px;
+	float: left;
+	background: #E7E8EC url(../img/lianxi_icons.png) 13px 14px no-repeat;
+}
+.talksome input{
+	outline: none;
+	width: 650px;
+	height: 210px;
+	float: right;
+	background: white;
+	border: none;
+}
+
+.talksome .talkr{
+	width: 352px;
+	height: 210px;
+	float: right;
+	background: url(../img/liuyan.jpg) no-repeat;
+}
+.talkb{
+	width: 1106px;
+	height: 300px;
+	margin: 0 auto;
+	background: url(../img/address.jpg) no-repeat;
+}
+
+.map{
+	position: relative;
+}
+.maptop{
+	width: 1100px;
+	position: relative;
+	margin: 0 auto;
+	z-index: 999;
+}
+.maptop img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.mapbott{
+	background:url(../img/map_bottomimg.png) top center no-repeat;
+    position:absolute;
+    bottom:0;
+    left:0;
+    height:33px;
+    width:100%;
+    min-width:1100px;
+    background-color:transparent;
+}
+.all_map_baidu{
+	 height: 660px;
+    overflow: hidden;
+    min-width:1100px;
+    margin: 0;
+    font-family: "宋体";
+}
+.bottoo{
+	height: 348px;
+	background: url(../img/yinyue_bg.jpg);
+	
+}
+#music{
+	width: 532px;
+	height: 70px;
+	margin: 0px auto;
+	position: relative;
+	top: 100px;	
+}
+#mus1{
+	width: 57px;
+	height: 57px;
+	float: left;
+	background: url(../img/yinyue_duo.png) no-repeat;
+}
+#mus2{
+	width: 57px;
+	height: 57px;
+	margin-left: 20px;
+	float: left;
+	background: url(../img/yinyue_fa.png) no-repeat;
+}
+#mus3{
+	width: 57px;
+	height: 57px;
+	float: left;
+	margin-left: 20px;
+	background: url(../img/yinyue_la.png) no-repeat;
+}
+#mus4{
+	width: 57px;
+	height: 57px;
+	margin-left: 20px;
+	float: left;
+	background: url(../img/yinyue_lai.png) no-repeat;
+}
+#mus5{
+	width: 57px;
+	height: 57px;
+	margin-left: 20px;
+	float: left;
+	background: url(../img/yinyue_mi.png) no-repeat;
+}
+#mus6{
+	width: 57px;
+	height: 57px;
+	margin-left: 20px;
+	float: left;
+	background: url(../img/yinyue_suo.png) no-repeat;
+}
+#mus7{
+	width: 57px;
+	height: 57px;
+	
+	float: right;
+	background: url(../img/yinyue_xi.png) no-repeat;
+}
+#mus1:hover{
+	background: url(../img/yinyue_duo.png) 0 -57px no-repeat;
+}
+#mus2:hover{
+	background: url(../img/yinyue_fa.png) 0 -57px no-repeat;
+}
+#mus3:hover{
+	background: url(../img/yinyue_la.png) 0 -57px no-repeat;
+}
+#mus4:hover{
+	background: url(../img/yinyue_lai.png) 0 -57px no-repeat;
+}
+#mus5:hover{
+	background: url(../img/yinyue_mi.png) 0 -57px no-repeat;
+}
+#mus6:hover{
+	background: url(../img/yinyue_suo.png) 0 -57px no-repeat;
+}
+#mus7:hover{
+	background: url(../img/yinyue_xi.png) 0 -57px no-repeat;
+}
+.hidde{
+	display: none;
+	width: 200px;
+	height: 200px;
+	position: fixed;
+	right: 2%;
+	top: 75%;
+}
+#hidde1{
+	
+	float: right;
+	margin-right: 22px;
+	width: 50px;
+	height: 50px;
+	background: url(../img/scroll_top_bg.png) no-repeat;
+}
+#hidde1:hover{
+	background: url(../img/scroll_top_bg.png) 0 -50px no-repeat;
+}
+#hidde2{
+	width: 236px;
+	height: 87px;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    
+	margin-top: 30px;
+	background: url(../img/fixed_contactus.png) -137px 0 no-repeat;
+}
+#hidde2:hover{
+	position: absolute;
+	left: -47px;
+	background: url(../img/fixed_contactus.png) no-repeat;
+}
+

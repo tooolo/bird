@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/animate.css" />
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/move.js"></script>
+		<style type="text/css">
+			#cont1 {
+				width: 100%;
+				height: 593px;
+				overflow: hidden;				
+				margin: 0 auto;
+				position: relative;
+				cursor: pointer;
+				list-style: none;
+				background: #F1F2F6;
+			}
+			.baoguo{
+				width: 100%;
+				height: 593px;
+				position: relative;
+			}
+			
+			#cont1 li {
+				position: relative;
+				float: left;
+				width: 100%;
+				height: 593px;
+			}
+			
+			.circle1 {								
+				position: absolute;
+				bottom: 7%;
+				left: 49%;								
+				width: 84px;
+				height: 8px;			
+			}
+			.circle1 .active{
+				background: #006FD6;
+			}			
+			.circle1>i {
+				cursor: pointer;
+				z-index: 10;
+				margin-right: 20px;
+				float: left;
+				width: 8px;
+				height: 8px;
+				background: #ccc;
+				border-radius: 50%;
+			}
+			
+			.img1 {
+				position: absolute;
+				top: 210px;
+				right: 50px;
+			}
+			
+			.img2 {
+				position: absolute;
+				top: 307px;
+				right: 300px;
+			}
+			
+			.img3 {
+				position: absolute;
+				top: 370px;
+				right: 40px;
+			}
+			
+			#img5 {
+				position: absolute;
+				top: 92px;
+				left: 658px;
+			}
+			
+			#img4 {
+				position: absolute;
+				top: 180px;
+				left: 456px;
+			}
+			#img6 {
+				position: absolute;
+				top: 195px;
+				left: 668px;
+			}
+			
+			#img7 {
+				position: relative ;	
+				left: 49%;		
+				top: 5%;
+			}
+			
+			#img8 {
+				position: absolute;
+				left: 43%;
+				top: 10%;
+			}
+			.ani-slid1 {
+				animation: slid1 0.5s linear;
+			}			
+			@keyframes slid1 {
+				from {
+					left: 0
+				}
+				to {
+					left: 750px
+				}
+			}
+			.ani-slid2 {
+				animation: slid2 1s linear;
+			}
+			
+			@keyframes slid2 {
+				from {
+					right: 0;
+					opacity: 0;
+				}
+				to {
+					right: 300px;
+					opacity: 1;
+				}
+			}
+			.middle {
+				position: relative;
+				background: #F1F2F6;
+		         z-index: 10;
+			}
+			.wrapone {
+				width: 1130px;
+				height: 600px;
+				margin: 180px auto 0;	
+			}			
+			.vertic {
+				width: 19px;
+				height: 380px;
+				float: left;	
+			}
+			.vertic>i{
+				margin-top: 30px;
+				width: 18px;
+				height: 18px;
+				border-radius: 50%;
+				border: 1px solid #ccc;
+				display: block;
+				margin-bottom:50px ;
+			}
+			.vertic>i:hover{				
+				background: #006FD6;
+			}			
+			.content {
+				width: 1109px;
+				float: left;	
+				overflow: hidden;
+			}			
+			.lfimg{
+				width: 1170px;
+				height: 436px;				
+				position: relative;
+				left: 20px;
+			}
+			.lfimg li{
+				width: 370px;
+				height: 436px;
+				display: none;			
+			}
+		   .lfimg>li>ul>li .xiao1{
+		   	width: 570px;
+		   	height: 219px;
+		   	left: 350px;
+		   	position: absolute;
+		   }
+		   		   
+		   .lfimg>li>ul>li .xiao2{
+		   	width: 570px;
+		   	height: 175px;
+		   	left: 350px;
+		   	top: -169px;
+		   	position: absolute;
+		   }
+
+		   .cgline{
+		   	width: 650px;
+		   	height: 100px;
+		   	margin: 0 auto;
+		   	position: relative;
+		   }
+		   .left{
+		   	position: absolute;
+		   	left: 300px;
+		   	top: 220px;
+		   }
+		   .right{		   	
+		   	position: absolute;
+		   	right: -200px;
+		   	top: 220px;
+		   }
+		   
+		  .vertic .active{		  		  	
+		   	background: url(img/dian.png);
+		   }
+		  .lfimg li p{
+		   	width: 640px;
+		   	height: 600px;		   
+		   	position: relative;
+		   	left: 400px;		   	
+		   }
+		   .xiao2{
+		   	position: absolute;		   
+		   	top: 267px;
+		   }
+		   #pre1{
+		   	position: absolute;
+		   	left: 45%;
+		   	bottom: 5%;
+		   	width: 29px;
+		   	height: 29px;
+
+		   	background: url(img/prev_jiantou.png) no-repeat;
+		   }
+		   #pre1:hover{
+		   	background: url(img/prev_jiantou_hover.png);
+		   }
+		   #next1{
+		   	position: absolute;
+		   	left: 55%;
+		   	bottom: 5%;
+		   	width: 29px;
+		   	height: 29px;
+		   	background: url(img/next_jiantou.png) no-repeat;
+		   }
+		   #next1:hover{
+		   	background: url(img/next_jiantou_hover.png);
+		   }
+		</style>
+	</head>
+
+	<body>
+		<div id="header"></div>
+		<div class="baoguo">
+		<ul id="cont1">
+			<li onclick="window.location='scorl.html'" style="background: url(img/bg1.jpg) no-repeat;background-size:cover;">
+				<img class="img1 ani-slid1" src="img/text.png" /><br />
+				<img class="img2 ani-slid2" src="img/text6.png" /><br />
+				<img class="img3" src="img/text3.png" /><br />
+			</li>
+			<li style="background: url(img/bg2.jpg) no-repeat;background-size:cover ;">
+				<img id="img4" class="animated fadeInLeft" src="img/text1.png" />
+				<img id="img5" class="animated bounceInRight" src="img/text2.png" />
+				<img id="img6" src="img/text7.png" />
+			</li>
+			<li style="background: url(img/bg1.jpg) no-repeat;background-size:cover ;">
+				<img class="img1 ani-slid1" src="img/text4.png" />
+				<img class="img2 ani-slid2" src="img/text5.png" />
+				<img class="img3" src="img/text3.png" />
+			</li>									
+		</ul>
+		<div class="circle1">				
+				<i class="active"></i>
+				<i></i>
+				<i></i>				
+			</div>	
+		<div id="pre1"></div>
+		<div id="next1"></div>
+		</div>
+		<div class="middle">
+			<img id="img7" src="img/xia.png" />
+			<img id="img8" src="img/produce.jpg" />
+			<div class="wrapone">
+				<div class="vertic">
+					<i class="active"></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+				<div class="content">
+					<div class="lfhand">
+						<ul class="lfimg">
+							<li style="background: url(img/image01.jpg);display: block;">
+								
+									<p>
+									<img class="xiao1" src="img/xiao1.jpg" />
+									<img class="xiao2" src="img/xiao2.jpg" />
+									</p>
+							
+							</li>
+							<li style="background: url(img/image02.jpg);">
+								<p>
+									<img class="xiao1" src="img/xiao1.jpg" />
+									<img class="xiao2" src="img/xiao2.jpg" />
+								
+							</li>
+							<li style="background: url(img/image03.jpg);">
+								<p>
+									<img class="xiao1" src="img/xiao1.jpg" />
+									<img class="xiao2" src="img/xiao2.jpg" />
+								</p>
+							</li>
+							<li style="background: url(img/image04.jpg);">
+								<p>
+									<img class="xiao1" src="img/xiao1.jpg" />
+									<img class="xiao2" src="img/xiao2.jpg" />
+								</p>
+							</li>
+							<li style="background: url(img/image05.jpg);">
+								<p>
+									<img class="xiao1" src="img/xiao1.jpg" />
+									<img class="xiao2" src="img/xiao2.jpg" />
+								</p>
+							</li>
+							<li style="background: url(img/image06.jpg);">
+								<p>
+									<img class="xiao1" src="img/xiao1.jpg" />
+									<img class="xiao2" src="img/xiao2.jpg" />
+								</p>
+							</li>
+						</ul>
+					</div>
+				    </div>
+				<div class="cgline">					
+					<img class="left" src="img/prev_jiantou.png" />
+				    <img class="right" src="img/next_jiantou.png" />
+				</div>
+			</div>
+		</div>				
+	</body>
+
+</html>
+<script type="text/javascript">
+	$("#header").load("head.html")	
+	var i;
+	var index1=0;
+	$(".circle1>i").click(function(){
+    var	index=$(this).index()
+    	$(".circle1>i").eq(index).addClass("active").siblings("i").removeClass("active")
+		$("#cont1>li").eq(index).fadeIn(400).siblings("li").fadeOut(100)
+    })
+	$("#pre1").click(function(){		
+				
+		moven(-1)
+	})
+	$("#next1").click(function(){		
+		moven(1)
+	})
+
+	function moven(i){
+		console.log(index1)
+		index1=index1+i;
+		console.log(index1)
+		index1=index1>2 ? 0 : index1;
+		index1=index1<0 ? 2 : index1;
+		$(".circle1>i").eq(index1).addClass("active").siblings("i").removeClass("active")
+		$("#cont1>li").eq(index1).fadeIn(400).siblings("li").fadeOut()
+  		
+	}
+	
+
+	
+	function move(that){
+		var oldIndex=$(".lfimg>li:visible").index();
+		var newIndex=$(that).index();
+		
+		$(".vertic>i").eq(newIndex).addClass("active").siblings("i").removeClass("active")
+		if(newIndex>oldIndex){
+			$(".lfimg>li").eq(newIndex).attr("class","animated fadeInLeft").fadeIn(400).siblings("li").fadeOut(100)
+		}else{
+			$(".lfimg>li").eq(newIndex).attr("class","animated fadeInRight").fadeIn(400).siblings("li").fadeOut(100)
+		}
+	}
+	$(".vertic>i").click(function(){
+		move($(this));
+	})
+	$(".left").click(function(){
+		move($(".lfimg>li:visible").prev());
+	})
+	$(".right").click(function(){
+        var that = $(".lfimg>li:visible").next();           
+     that.index()!=-1&&that.index()<=5?move(that):move($(".lfimg>li:first"));
+  })
+</script>

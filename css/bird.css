@@ -1,0 +1,173 @@
+body{
+	background: #F1F2F6;
+}
+h1,h2,img{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.content_bird{
+	width: 1100px;
+	height: auto;
+	min-height:500px;
+	margin: 0 auto;
+	padding-top:120px ;
+}
+.bird_new{
+	width: 250px;
+	height: 100px;
+	margin: 0 auto;
+}
+.bird_new h1{
+	text-align: center;
+	color: #311759;
+	line-height: 60px;
+	font-size: 54px;
+}
+.bird_new h2{
+	color: #311759;
+	font-size: 18px;
+	color: #311759;
+	letter-spacing: 6px;
+}
+.bird_new img{
+   position: relative;
+   top: 15px;
+	display: block;
+	margin: 0 auto;
+}
+.newlist{
+    position: relative;
+    font-size: 30px;
+    color: #311759;
+    background: url(../img/pen_line_long.png) no-repeat 0 58px;
+	height: 60px;
+}
+.newlist .pen{
+   width: 61px;
+    height: 58px;
+    display: inline-block;
+    background: url(../img/pen_list.png) no-repeat;
+    position: absolute;
+    right: 0px;
+    top: 7px; 
+}
+.hidde{
+	display: none;
+	width: 200px;
+	height: 200px;
+	position: fixed;
+	right: 2%;
+	top: 70%;
+}
+#hidde1{
+	
+	float: right;
+	margin-right: 22px;
+	width: 50px;
+	height: 50px;
+	background: url(../img/scroll_top_bg.png) no-repeat;
+}
+#hidde1:hover{
+	background: url(../img/scroll_top_bg.png) 0 -50px no-repeat;
+}
+#hidde2{
+	width: 236px;
+	height: 87px;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    
+	margin-top: 30px;
+	background: url(../img/fixed_contactus.png) -137px 0 no-repeat;
+}
+#hidde2:hover{
+	position: absolute;
+	left: -47px;
+	background: url(../img/fixed_contactus.png) no-repeat;
+}
+.circle_point .active{
+	background: #006FD6;
+}
+.content_bird .photo{
+	width: 1130px;
+	overflow: hidden;
+	padding-top:40px ;
+}
+.same{
+	width: 513px;
+    height: 202px;
+    float: left;
+    background: #fff;
+    padding: 36px 0 0 20px;
+    margin: 0 20px 30px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    position: relative;
+}
+.images{
+	height: 168px;
+    width: 260px;
+    overflow: hidden;
+    float: left;
+    margin-right: 17px;
+}
+.same .images img{
+   width: 260px;
+}
+.same .words{
+	width: 221px;
+	float: left;
+}
+.same:hover{
+	position: relative;
+	top: -10px;
+	border: 1px solid #86759E;
+}
+.words .title{
+	font-size: 20px;
+	color: #454548;
+	line-height: 26px;
+    max-height: 53px;
+    overflow: hidden;
+    padding-top: 15px;
+}
+.words .date{
+    color: #6b6a6f;   
+    font-size: 16px;
+    padding-top: 2px;
+}
+.words p{
+	padding-top: 8px;
+    color: #47464a;
+    line-height: 25px;
+    max-height: 75px;
+    font-family: KaiTi_GB2312;
+    letter-spacing: 0px;
+}
+.photo .check{
+	width: 107px;
+	height: 250px;
+	margin: 15px auto 130px;
+	position: relative;
+	left: -20px;
+	clear: both;
+	
+}
+.fade{
+	width: 58px;
+	height: 58px;
+	position: relative;
+	top: 10px;
+	left: 25px;
+	display: block;
+	background: url(../img/lis_more_btn_bg.png) 0 -58px no-repeat;
+}
+.fade:hover{
+	background: url(../img/lis_more_btn_bg.png) no-repeat;
+}
+
+
+
+
+/*list.css*/
